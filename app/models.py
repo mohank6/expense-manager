@@ -16,7 +16,7 @@ class UserProfile(AbstractBaseUser):
     expected_income_per_annum = models.DecimalField(
         max_digits=10, decimal_places=2, default=0.0, null=True
     )
-    date_of_birth = models.DateField(null=True)
+    date_of_birth = models.DateField(null=True, blank=True)
     USERNAME_FIELD = "username"
 
 
